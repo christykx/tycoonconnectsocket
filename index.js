@@ -1,18 +1,18 @@
-// const io = require("socket.io")(8900, {
-//     cors: {
-//         // origin: ["https://localhost:3000", "https://tycoonconnect.onrender.com","https://example.com"],
-//         origin: ["http://localhost:3000"],
-
-//     },
-// });
-
-
-const io = require("socket.io")("https://main.df3c74chvq731.amplifyapp.com", {
+const io = require("socket.io")(8900, {
     cors: {
-             origin: ["https://main.d1m5dwj4swb035.amplifyapp.com"],
+        // origin: ["https://localhost:3000", "https://tycoonconnect.onrender.com","https://example.com"],
+        origin: ["http://localhost:3000"],
 
     },
 });
+
+
+// const io = require("socket.io")("https://main.df3c74chvq731.amplifyapp.com", {
+//     cors: {
+//              origin: ["https://main.d1m5dwj4swb035.amplifyapp.com"],
+
+//     },
+// });
 
  
 let users = [];
