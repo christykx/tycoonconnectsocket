@@ -7,7 +7,7 @@
 // });
 
 
-const io = require("socket.io")("https://tycoonconnect.online", {
+const io = require("socket.io")("https://main.df3c74chvq731.amplifyapp.com", {
     cors: {
              origin: ["https://main.d1m5dwj4swb035.amplifyapp.com"],
 
