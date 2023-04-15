@@ -6,15 +6,28 @@
 //     },
 // });
 
+// const io = require("socket.io")("https://tycoonconnectsocket.onrender.com", {
+//     cors: {
+//              origin: ["https://main.d1m5dwj4swb035.amplifyapp.com"],
 
-const io = require("socket.io")("https://tycoonconnectsocket.onrender.com", {
+//     },  
+// });
+
+
+const http = require('http');
+const server = http.createServer();
+const io = require("socket.io")(server, {
     cors: {
-             origin: ["https://main.d1m5dwj4swb035.amplifyapp.com"],
-
+        origin: ["https://main.d1m5dwj4swb035.amplifyapp.com"],
     },
 });
 
- 
+server.listen(8900, () => {
+    console.log('Socket.io server listening on port 8900');
+});
+
+
+
 let users = [];
 let peerusers = [];
 
